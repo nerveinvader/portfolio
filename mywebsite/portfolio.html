@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amin's Portfolio | Nerveinvader</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Main Content Wrapper -->
+    <div id="top" class="container">
+
+        <!-- Header / Navigation Bar -->
+        <header>
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#top" class="nav-link">Home</a></li>
+                    <li><a href="#development-projects" class="nav-link">Projects</a></li>
+                    <li><a href="#introduction" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Parallax Background -->
+         <div class="parallax-container">
+            <div class="parallax-bg"></div>
+         </div>
+
+        <!-- Main Introduction Section -->
+        <main>
+            <!-- Introduction Section -->
+            <section id="introduction" class="introduction">
+                <h1>Hi! My name is Amin, the nerveinvader.</h1>
+                <h2>I'm an independent developer, currently based in Iran.</h2>
+                <h3>Navigate down to have a ride along with me...</h3>
+                <div class="intro-image">
+                    <img src="path/to/image.jpg" alt="Amin, the nerveinvader">
+                </div>
+            </section>
+
+            <!-- Development Work Section -->
+            <section id="development-projects" class="development-projects">
+                <div class="projects-wrapper">
+                    <article class="game-dev">
+                        <h3>Game Development Projects</h3>
+                        <ul class="game-projects">
+                            <li><a href="https://reapernx.itch.io/project-ssp" target="_blank" rel="noopener noreferrer">Project SSP (work in progress - available on itch.io)</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="web-dev">
+                        <h3>Web Development Projects</h3>
+                        <!-- Add your web development projects here -->
+                        <p>Stay tuned for more projects!</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h3>Contact Me Via Links Below:</h3>
+                <h4 class="email-link">Email: amin.raji96@hotmail.com</h4>
+                <div class="image-links">
+                    <a href="https://github.com/nerveinvader" target="_blank">
+                        <img class="github-link" src="images/GitHub_Logo.png" alt="Github Link"></a>
+                    <a href="https://reapernx.itch.io/" target="_blank">
+                        <img class="itch-link" src="images/itchio-logo-black.png" alt="Itch.io Link"></a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#development-projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>(c) 2024, nerveinvader. All Rights Reserved.</p>
+                </div>
+                <div></div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JS for Parallax Scrolling -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const parallaxBg = document.querySelector('.parallax-bg');
+            let scrollPosition = window.pageYOffset;
+            parallaxBg.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+        });
+    </script>
+</body>
+</html>
