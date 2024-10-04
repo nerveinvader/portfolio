@@ -103,6 +103,9 @@ main {
 
 /* Introduction Section */
 .introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     padding: 40px 40px;
 }
@@ -120,10 +123,10 @@ main {
 
 /* Image Placeholder */
 .intro-image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100px;
     border-radius: 8px;
     margin-top: 20px;
+    filter: blur(4px);
 }
 
 /* Development Projects Section */
